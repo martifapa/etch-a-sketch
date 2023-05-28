@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script src="etch-a-sketch.js" defer></script>
+
+    <title>Document</title>
+
+</head>
+<body>
+    <header>
+        <div class="home-logo">LOGO IMG</div>
+        <nav>
+            <div class="nav-element">Home</div>
+            <div class="nav-element dropdown">
+                <a href="#">Other projects</a>
+                <div class="dropdown-content">
+                    <div><a>Awesome project 1</a></div>
+                    <div><a>Awesome project 2</a></div>
+                    <div><a>Awesome project 3</a></div>
+                    <div><a>Awesome project 4</a></div>
+                </div>
+            </div>
+            <div class="nav-element">Contact</div>
+            <div class="nav-element color-mode">
+                Ligth mode
+                <input type="checkbox" id="switch-color">
+            </div>
+        </nav>
+    </header>
+
+    <div class="title">
+        <h1>Etch-a-sketch</h1>
+    </div>
+
+    <main>
+        <div class="options-container">
+
+            <div class="options">
+                <div class="option feature">
+                    <p>Brush color</p>
+                    <input type="color" id="brush-color">
+                </div>
+                <div class="option feature">
+                    <p>Background</p>
+                    <input type="color" id="bkg-color">
+                </div>
+                <div class="option feature">
+                    <p>Eraser</p>
+                    <input type="checkbox" id="eraser">
+                </div>
+                <div class="option feature">
+                    <p>Grid</p>
+                    <input type="checkbox" id="show-grid">
+                </div>
+                <div class="option feature">
+                    <input type="range" id="grid-size" min="0" max="100" step="1" value="10">
+                    <p class="grid-size-label">10x10</p>
+                </div>
+                <div class="option btn">
+                    <button>Erase</button>
+                </div>
+
+                <div class="option btn">
+                    <button>Download</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sketch-container"></div>
+    </main>
+
+</body>
+</html>
